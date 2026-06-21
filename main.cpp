@@ -1,17 +1,19 @@
 #include <iostream>
-#include "class.h"
+#include "Headers/class.h"
 
 int main() {
     std::cout<<"Hello!\n Do you want to Log in?\n [y/n]";
 
     char answer;
-    std::cin>>answer
-    if(answer == y || Y) {
-        Registration first;
-        Registration::Registation();
-    } if else (answer == n || N) {
+    std::cin>>answer;
+    if(answer == 'y' || answer == 'Y') {
+        Registration first("inteligence", "meintel@proton.me", "***********...");
+        first.displayInfo();
+    } 
+    else if (answer == 'n' || 'N') {
         return 0;
-    } else {
+    } 
+    else {
         std::cout<<"Unknown answer\n";
     }
 }
