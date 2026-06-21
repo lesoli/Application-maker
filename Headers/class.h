@@ -7,6 +7,6 @@ class Registration {
         std::string email;
         std::string password;
     public:
-        Registration(std::string name, std::string email, std::string password);
+        Registration(std::string Newname, std::string Newemail, std::string Newpassword);
         void displayInfo();
 };
